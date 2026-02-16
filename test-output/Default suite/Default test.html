@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 16 11:38:46 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>398 seconds (398099 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that  Edit screen is visible without any error .", "Below test cases are for sanity testing"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot; type=&quot;button&quot;&gt; is not clickable at point (670,141) because another element &lt;div class=&quot;MuiBackdrop-root css-cpeh0l&quot;&gt; obscures it
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9703e681-ece8-469b-98dd-29829f7112a4, clickElement {id=319e0837-b77a-4db8-b67d-cf56353c129d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6636, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (9703e681-ece8-469b-98dd-29829f7112a4)] -&gt; xpath: //button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot;]]
+Session ID: 9703e681-ece8-469b-98dd-29829f7112a4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Keywords_Driven_Framework.KeywordsUAT.Click(KeywordsUAT.java:72)
+	at stepsDefinations.AccountUAT.SeARCH(AccountUAT.java:120)
+	at ✽.click on Search button(file:///C:/Users/user/eclipse-workspace/Framework/src/test/resources/feature/Sanity.feature:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1066856480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1066856480'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot; type=&quot;button&quot;&gt; is not clickable at point (670,141) because another element &lt;div class=&quot;MuiBackdrop-root css-cpeh0l&quot;&gt; obscures it
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9703e681-ece8-469b-98dd-29829f7112a4, clickElement {id=319e0837-b77a-4db8-b67d-cf56353c129d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6636, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (9703e681-ece8-469b-98dd-29829f7112a4)] -&gt; xpath: //button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot;]]
+Session ID: 9703e681-ece8-469b-98dd-29829f7112a4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Keywords_Driven_Framework.KeywordsUAT.Click(KeywordsUAT.java:72)
+	at stepsDefinations.AccountUAT.SeARCH(AccountUAT.java:120)
+	at ✽.click on Search button(file:///C:/Users/user/eclipse-workspace/Framework/src/test/resources/feature/Sanity.feature:46)
+</pre></div></td>
+<td>52</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that Edit button functionality for Rendering provider page..", "Below test cases are for sanity testing"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot; type=&quot;button&quot;&gt; is not clickable at point (670,135) because another element &lt;div class=&quot;MuiBackdrop-root css-cpeh0l&quot;&gt; obscures it
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7aba495c-6ec3-4d39-a786-5b5595ffc0cf, clickElement {id=16cb2e78-849f-4bd3-b1c7-9f0b2ffafc76}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23276, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7aba495c-6ec3-4d39-a786-5b5595ffc0cf)] -&gt; xpath: (//button[@type=&quot;button&quot;])[12]]
+Session ID: 7aba495c-6ec3-4d39-a786-5b5595ffc0cf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Keywords_Driven_Framework.KeywordsUAT.Click(KeywordsUAT.java:72)
+	at stepsDefinations.AccountUAT.searchRed(AccountUAT.java:157)
+	at ✽.click on RendSearch button(file:///C:/Users/user/eclipse-workspace/Framework/src/test/resources/feature/Sanity.feature:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace304193386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304193386'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot; type=&quot;button&quot;&gt; is not clickable at point (670,135) because another element &lt;div class=&quot;MuiBackdrop-root css-cpeh0l&quot;&gt; obscures it
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7aba495c-6ec3-4d39-a786-5b5595ffc0cf, clickElement {id=16cb2e78-849f-4bd3-b1c7-9f0b2ffafc76}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23276, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7aba495c-6ec3-4d39-a786-5b5595ffc0cf)] -&gt; xpath: (//button[@type=&quot;button&quot;])[12]]
+Session ID: 7aba495c-6ec3-4d39-a786-5b5595ffc0cf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Keywords_Driven_Framework.KeywordsUAT.Click(KeywordsUAT.java:72)
+	at stepsDefinations.AccountUAT.searchRed(AccountUAT.java:157)
+	at ✽.click on RendSearch button(file:///C:/Users/user/eclipse-workspace/Framework/src/test/resources/feature/Sanity.feature:73)
+</pre></div></td>
+<td>47</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that search button functionality for Rendering provider page..", "Below test cases are for sanity testing"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot; type=&quot;button&quot;&gt; is not clickable at point (670,135) because another element &lt;div class=&quot;MuiBackdrop-root css-cpeh0l&quot;&gt; obscures it
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [30eff435-abcc-4937-b7af-b6bff283707a, clickElement {id=b4c41fef-391a-4efa-8881-b90aae674909}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24756, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (30eff435-abcc-4937-b7af-b6bff283707a)] -&gt; xpath: (//button[@type=&quot;button&quot;])[12]]
+Session ID: 30eff435-abcc-4937-b7af-b6bff283707a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Keywords_Driven_Framework.KeywordsUAT.Click(KeywordsUAT.java:72)
+	at stepsDefinations.AccountUAT.searchRed(AccountUAT.java:157)
+	at ✽.click on RendSearch button(file:///C:/Users/user/eclipse-workspace/Framework/src/test/resources/feature/Sanity.feature:62)
+</pre></div><a href='#' onClick='toggleBox("stack-trace584866226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584866226'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedAccent MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorAccent MuiButton-disableElevation btn-normal css-1rpbjkv&quot; type=&quot;button&quot;&gt; is not clickable at point (670,135) because another element &lt;div class=&quot;MuiBackdrop-root css-cpeh0l&quot;&gt; obscures it
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [30eff435-abcc-4937-b7af-b6bff283707a, clickElement {id=b4c41fef-391a-4efa-8881-b90aae674909}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24756, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (30eff435-abcc-4937-b7af-b6bff283707a)] -&gt; xpath: (//button[@type=&quot;button&quot;])[12]]
+Session ID: 30eff435-abcc-4937-b7af-b6bff283707a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Keywords_Driven_Framework.KeywordsUAT.Click(KeywordsUAT.java:72)
+	at stepsDefinations.AccountUAT.searchRed(AccountUAT.java:157)
+	at ✽.click on RendSearch button(file:///C:/Users/user/eclipse-workspace/Framework/src/test/resources/feature/Sanity.feature:62)
+</pre></div></td>
+<td>51</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that Edit button functionality for Service Location page..", "Below test cases are for sanity testing"</td>
+<td></td>
+<td>71</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that search button functionality for Service Location page..", "Below test cases are for sanity testing"</td>
+<td></td>
+<td>65</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that search button functionality for Refering provider page..", "Below test cases are for sanity testing"</td>
+<td></td>
+<td>67</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the application is logging with correct credentials..", "Below test cases are for sanity testing"</td>
+<td></td>
+<td>39</td>
+<td>runner.TestRunner@1ebd319f</td></tr>
+</table><p>
+</body>
+</html>
