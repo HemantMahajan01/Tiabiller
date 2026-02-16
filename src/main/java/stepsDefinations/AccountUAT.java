@@ -226,12 +226,12 @@ public void searchServClick() {
 	key.Click(LocatorsForTiastaUAT.SearchServ);
 }
 /*
- * Verify that Edit button functionality for Service Location page.
+ * Verify that Edit button functionality for Service Location page..
  */
 @And ("Click on ServiceEdit button") 
 public void EditService() {
 	key.jsClick(LocatorsForTiastaUAT.SerEdit);
-// qwidjaljd
+
 }
 
 }
